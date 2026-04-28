@@ -46,7 +46,7 @@ export default function Hero() {
         if (p.y > h) p.y = 0
         ctx.beginPath()
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(200,240,100,${p.alpha})`
+        ctx.fillStyle = `rgba(255,85,0,${p.alpha})`
         ctx.fill()
       })
       // draw connections
@@ -57,7 +57,7 @@ export default function Hero() {
             ctx.beginPath()
             ctx.moveTo(a.x, a.y)
             ctx.lineTo(b.x, b.y)
-            ctx.strokeStyle = `rgba(200,240,100,${0.06 * (1 - d / 120)})`
+            ctx.strokeStyle = `rgba(255,85,0,${0.06 * (1 - d / 120)})`
             ctx.lineWidth = 0.5
             ctx.stroke()
           }

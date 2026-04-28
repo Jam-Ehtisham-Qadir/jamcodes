@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=DM+Mono:wght@300;400;500&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:       #080808;
-  --bg2:      #0f0f0f;
-  --bg3:      #161616;
-  --bg4:      #1e1e1e;
-  --border:   rgba(255,255,255,0.06);
-  --border2:  rgba(255,255,255,0.12);
-  --border3:  rgba(255,255,255,0.2);
-  --text:     #eeebe4;
-  --muted:    #7a7870;
-  --dim:      #3f3e3a;
-  --accent:   #c8f064;
-  --accent2:  #64f0c8;
-  --accent-dim: rgba(200,240,100,0.08);
-  --accent-border: rgba(200,240,100,0.2);
-  --font-head: 'Syne', sans-serif;
+  --bg:       #0a0a0a;
+  --bg2:      #111111;
+  --bg3:      #181818;
+  --bg4:      #202020;
+  --border:   rgba(255,255,255,0.07);
+  --border2:  rgba(255,255,255,0.13);
+  --border3:  rgba(255,255,255,0.22);
+  --text:     #f5f5f5;
+  --muted:    #888888;
+  --dim:      #444444;
+  --accent:   #FF5500;
+  --accent2:  #FF7733;
+  --accent-dim: rgba(255,85,0,0.08);
+  --accent-border: rgba(255,85,0,0.25);
+  --font-head: 'DM Sans', sans-serif;
   --font-mono: 'DM Mono', monospace;
 }
 
@@ -32,7 +32,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-::selection { background: var(--accent); color: #080808; }
+::selection { background: var(--accent); color: #fff; }
 
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg); }

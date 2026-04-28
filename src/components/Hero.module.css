@@ -12,15 +12,15 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .gridBg {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
   background-size: 72px 72px;
   mask-image: radial-gradient(ellipse 70% 70% at 30% 50%, black 20%, transparent 80%);
 }
@@ -62,7 +62,7 @@
   font-size: clamp(4rem, 10vw, 8.5rem);
   font-weight: 800;
   line-height: 0.9;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
   margin-bottom: 1.5rem;
 }
 
@@ -71,7 +71,7 @@
 .role {
   font-family: var(--font-mono);
   font-size: 0.85rem;
-  color: var(--accent2);
+  color: var(--accent);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -99,18 +99,17 @@
   gap: 0.5rem;
   padding: 0.875rem 1.875rem;
   background: var(--accent);
-  color: #080808;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.2s ease;
-  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
 }
 
 .btnPrimary:hover {
-  background: #d4f57a;
+  background: var(--accent2);
   transform: translateY(-2px);
 }
 
@@ -122,9 +121,9 @@
   background: transparent;
   border: 1px solid var(--border2);
   color: var(--text);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -141,9 +140,9 @@
   align-items: center;
   padding: 0.875rem 1.875rem;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.2s;

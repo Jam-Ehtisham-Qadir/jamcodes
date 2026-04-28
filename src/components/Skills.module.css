@@ -47,7 +47,7 @@
 }
 
 .accent { color: var(--accent); }
-.accent2 { color: var(--accent2); }
+.accent2 { color: var(--accent); }
 
 .tags {
   display: flex;
