@@ -13,9 +13,20 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [menuOpen])
+
   const handleNav = (id) => {
     setMenuOpen(false)
-    document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: 'smooth' })
+    setTimeout(() => {
+      document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: 'smooth' })
+    }, 300)
   }
 
   return (
@@ -36,6 +47,7 @@ export default function Navbar() {
         className={`${styles.hamburger} ${menuOpen ? styles.active : ''}`}
         onClick={() => setMenuOpen(m => !m)}
         aria-label="Toggle menu"
+        style={{ zIndex: 99999 }}
       >
         <span /><span /><span />
       </button>
