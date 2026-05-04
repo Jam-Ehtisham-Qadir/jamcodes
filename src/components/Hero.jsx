@@ -80,6 +80,7 @@ export default function Hero() {
       <canvas ref={canvasRef} className={styles.canvas} />
       <div className={styles.gridBg} />
 
+      <div className={styles.heroInner}>
       <div className={styles.content}>
         <motion.div className={styles.tag} {...fadeUp(0.1)}>
           <span className={styles.dot} />
@@ -134,8 +135,8 @@ export default function Hero() {
         <motion.div className={styles.stats} {...fadeUp(0.75)}>
           {[
             { n: '4+', l: 'Live Projects' },
-            { n: '7+', l: 'Months on ANUMIX' },
-            { n: '1', l: 'Sole SaaS Dev' },
+            { n: '2+', l: 'Years Experience' },
+            { n: '1', l: 'Full SaaS Built' },
           ].map(s => (
             <div key={s.l} className={styles.stat}>
               <span className={styles.statNum}>{s.n}</span>
@@ -143,6 +144,11 @@ export default function Hero() {
             </div>
           ))}
         </motion.div>
+      </div>
+      <div className={styles.photoWrap}>
+        <img src="/profile.jpeg" alt="Jam Ehtisham Qadir" className={styles.photo} />
+        <div className={styles.photoOverlay} />
+      </div>
       </div>
 
       <div className={styles.scrollHint}>

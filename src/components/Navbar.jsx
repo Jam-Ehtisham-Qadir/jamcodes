@@ -20,7 +20,9 @@ export default function Navbar() {
 
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
-      <a href="#hero" className={styles.logo}>jam.qadir</a>
+      <a href="#hero" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }} className={styles.logo}>
+        <img src="/logo.png" alt="Jam Codes" className={styles.logoImg} />
+      </a>
 
       <ul className={`${styles.links} ${menuOpen ? styles.open : ''}`}>
         {links.map(l => (

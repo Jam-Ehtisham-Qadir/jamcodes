@@ -9,11 +9,12 @@ export const projects = [
       'A full AI SaaS platform built from scratch as sole developer. Includes AI video generation with Google Veo, image generation, AI chat, script writing, text-to-speech narration, tiered subscriptions, a 3-level referral system, Google OAuth, JWT auth, and a comprehensive admin panel.',
     stack: ['Flask', 'React', 'PostgreSQL', 'Google Vertex AI', 'Google Veo', 'OpenAI', 'JWT', 'Apache'],
     liveUrl: 'https://app.anumix.com',
-    videoUrl: null, // replace with your demo video URL
+    videoUrl: '/videos/1.mp4', // replace with your demo video URL
     badge: 'Live SaaS Product',
   },
   {
     id: 2,
+    noDemo: true,
     number: '02',
     title: 'FaceLog',
     subtitle: 'AI Attendance System',
@@ -27,6 +28,7 @@ export const projects = [
   },
   {
     id: 3,
+    noDemo: true,
     number: '03',
     title: 'RAG Document Intelligence',
     subtitle: 'AI Document Q&A',
@@ -40,6 +42,7 @@ export const projects = [
   },
   {
     id: 4,
+    noDemo: true,
     number: '04',
     title: 'AI Social Media Agent',
     subtitle: 'Content Generation',

@@ -36,13 +36,15 @@ function ProjectCard({ project, index, onPlay }) {
         </div>
 
         <div className={styles.actions}>
-          <button
-            className={styles.playBtn}
-            onClick={() => onPlay(project)}
-          >
-            <FiPlay size={13} />
-            Watch Demo
-          </button>
+          {!project.noDemo && (
+            <button
+              className={styles.playBtn}
+              onClick={() => onPlay(project)}
+            >
+              <FiPlay size={13} />
+              Watch Demo
+            </button>
+          )}
           <a
             href={project.liveUrl}
             target="_blank"
